@@ -1,0 +1,15 @@
+package com.cg.practice.customexception;
+
+import java.util.Scanner;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		Scanner scn=new Scanner(System.in);
+		System.out.print("Enter the name: ");
+		String name=scn.nextLine();
+		System.out.println("Enter the Age: ");
+		int age=scn.nextInt();
+	}
+
+}

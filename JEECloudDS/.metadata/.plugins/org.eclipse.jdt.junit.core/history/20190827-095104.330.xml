@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="MathUtilsTest" project="JUnit5Basics" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="com.cg.junitlearn.MathUtilsTest" time="0.035" displayname="MathUtilsTest" uniqueid="[engine:junit-jupiter]/[class:com.cg.junitlearn.MathUtilsTest]">
+    <testcase name="test" classname="com.cg.junitlearn.MathUtilsTest" time="0.035" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:com.cg.junitlearn.MathUtilsTest]/[method:test()]"/>
+  </testsuite>
+</testrun>

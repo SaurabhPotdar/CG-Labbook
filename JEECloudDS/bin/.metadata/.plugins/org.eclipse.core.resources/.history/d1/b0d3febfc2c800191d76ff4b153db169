@@ -1,0 +1,11 @@
+package com.cg.employeemanagement.ui;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

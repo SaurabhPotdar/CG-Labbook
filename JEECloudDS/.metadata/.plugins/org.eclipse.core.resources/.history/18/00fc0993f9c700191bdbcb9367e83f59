@@ -1,0 +1,13 @@
+package com.cg.practice.stringpractice;
+
+public class MyApplication {
+
+	public static void main(String[] args) {
+		StringBuffer a=("abc");
+		System.out.println(a.toString()());
+		a="bcd";
+		System.out.println(a.hashCode());
+		
+	}
+
+}
