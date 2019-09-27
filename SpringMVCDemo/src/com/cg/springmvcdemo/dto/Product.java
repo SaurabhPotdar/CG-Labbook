@@ -1,12 +1,32 @@
 package com.cg.springmvcdemo.dto;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotEmpty;
+
+@Entity
+@Table(name="product_db")
 public class Product {
-	
+	@Id
+	@Column(name="prod_id")
+	@NotNull(message="Id cant be empty")
 	private Integer prodId;
+	@Column(name="prod_name")
+	@NotEmpty(message="Name cant be empty")
+	@Size(min=3,max=10,message="Name should be min 3 and max 10")
 	private String prodName;
+	@Column(name="prod_price")
 	private Double prodPrice;
+	@Column(name="prod_features")
 	private String features;
+	@Column(name="prod_type")
 	private String type;
+	@Column(name="prod_online")
 	private String online;
 	
 	public Product() {

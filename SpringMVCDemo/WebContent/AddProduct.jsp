@@ -14,17 +14,39 @@
 			<tr>
 				<td>Product ID</td>
 				<td><fo:input path="prodId" /></td>
+				<td><fo:errors path="prodId"></fo:errors></span></td>
 			</tr>
 			
 			<tr>
 				<td>Product Name</td>
 				<td><fo:input path="prodName" /></td>
+				<td><fo:errors path="prodName"></fo:errors></span></td>
 			</tr>
 
 			<tr>
-				<td>Product Price</td>
-				<td><fo:input path="prodPrice" /></td>
+				<td>Product Type</td>
+				<td><fo:select path="type" items="${dataitem }" /></td>
+				<td><fo:errors path="type"></fo:errors></span></td>
 			</tr>
+			
+			<tr>
+				<td>Product features</td>
+				<!-- <td><input TYPE=checkbox name="features" value="${dataitem2 }"></td> -->
+				<td>
+					<input type="radio" name="features" value="Automatic" checked> Automatic<br>
+					<input type="radio" name="features" value="Manual" > Manual<br>
+				</td>
+				<td><fo:errors path="features"></fo:errors></span></td>
+ 			</tr>
+ 			
+ 			<tr>
+				<td>Product online</td>
+				<td>
+					<input type="checkbox" name="online" value="Yes" > Yes<br>
+					<input type="checkbox" name="online" value="No" > No<br>
+				</td>
+				<td><fo:errors path="online"></fo:errors></span></td>
+ 			</tr>
 			
 			<tr>
 				<td><input type="submit" value="Submit"></td>

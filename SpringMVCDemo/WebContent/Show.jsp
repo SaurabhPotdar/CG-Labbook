@@ -7,8 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-Search Product:
+Find Product:
 	<form action="searchproduct" method="POST">
 		<table>
 
@@ -16,15 +15,15 @@ Search Product:
 				<td>Product ID</td>
 				<td><input name="pid" /></td>
 			</tr>
-			
+
+
 			<tr>
 				<td><input type="submit" value="Submit"></td>
 			</tr>
-			
+
 		</table>
 		</form>
-		
+		<br><br>
 		<jsp:include page="ShowProduct.jsp"/>
-
 </body>
 </html>
